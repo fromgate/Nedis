@@ -1,0 +1,5 @@
+name: Nedis
+main: ru.nukkit.nedis.NedisPlugin
+version: "0.0.1"
+author: fromgate, nukkit.ru
+api: ["1.0.0"]
