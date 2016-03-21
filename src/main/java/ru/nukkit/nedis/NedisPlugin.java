@@ -35,7 +35,7 @@ public class NedisPlugin extends PluginBase {
             jedisPool = createJedisPool(cfg.host, cfg.port, cfg.timeout,cfg.password,cfg.database,cfg.clientName);
             if (jedisPool != null) enabled = true;
             Jedis ping = jedisPool.getResource();
-            this.getLogger().info("Pinging server. Responce: "+ping.ping());
+            this.getLogger().info("Pinging server. Response: "+ping.ping());
             ping.close();
         } catch (Exception e){
             e.printStackTrace();
